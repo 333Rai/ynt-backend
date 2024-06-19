@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import './App.css';
 import Login from './components/login/Login';
-import Review from './components/login/review/Review';
+import Review from './components/review/Review';
 
 const App = () => {
 	const API_URI = 'http://13.53.171.221';
