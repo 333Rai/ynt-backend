@@ -23,7 +23,7 @@ const App = () => {
 		const accessToken =
 			JSON.parse(localStorage.getItem('accessToken')) || '';
 		try {
-			const { res } = await axios.post(
+			const { data } = await axios.post(
 				`${API_URI}/review/`,
 				{
 					comment,
@@ -36,7 +36,7 @@ const App = () => {
 					},
 				}
 			);
-			console.log(res);
+			console.log(data);
 		} catch (err) {
 			console.log(err);
 		}
